@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,18 +12,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <script src="js/scripts.js" defer></script>
+  <title>Product Card</title>
 </head>
+
 <body>
   <div class="wrapper">
-    <img src="Sofa.png" alt="Imagem do Sofá" id="img" onmouseenter="gif('img', 'Sofa.gif')" onmouseleave="gif('img', 'Sofa.png')">
+    <div id="product-image" onmouseenter="gif('img', 'assets/Sofa.gif')" onmouseleave="gif('img', 'assets/Sofa.jpg')">
+      <button id="btn360"><img src="assets/360.svg" alt="SVG 360"></button>
+      <img src="assets/Sofa.jpg" alt="Imagem do Sofá" id="img" >  
+    </div>
     <div class="info-produto">
-      <h2>CÓDIGO: 42404</h2>
+      <h4>CÓDIGO: 42404</h4>
       <h1>Sofá Margot II - Rosé</h1>
       <p>R$ 4.000</p>
-      <div class="button">ADICIONAR À CESTA</div>
+      <button>ADICIONAR À CESTA</button>
     </div>
   </div>
 </body>
-<script src="back.js"></script>
 </html>
